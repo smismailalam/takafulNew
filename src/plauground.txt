@@ -1,0 +1,206 @@
+              {/* <View style={{flex: 0.8}}></View>
+                         <View style={{alignItems: 'center'}}>
+                             <Ripple
+                                 size={10}
+                                 onPress={() => this.state.navigation.navigate('User')}
+                                 style={{
+                                     borderRadius: Dimensions.get('window').width / 2,
+                                     backgroundColor: '#C62828',
+                                     padding: 15
+                                 }}
+                             >
+                                 <Image style={{width: 30, height: 30}}
+                                     source={require('../../assets/icons/android/drawable-xxxhdpi/call_decline.png')}/>
+                             </Ripple>
+                         </View>
+                         <View style={{
+                             flex: 0.2,
+                             flexDirection: 'row',
+                             alignItems: 'center',
+                             justifyContent: 'space-around'
+                         }}>
+
+                             <Ripple
+                                 size={10}
+                                 onPress={() => this.cameraChange()}
+                             >
+                                 <Image style={{width: 30, height: 30}}
+                                     source={require('../../assets/icons/android/drawable-xxxhdpi/camSwap.png')}/>
+                             </Ripple> */}
+
+                             {/* <View style={{ borderRadius:Dimensions.get('window').width / 2, borderWidth: 0.5, borderColor: '#afb0b3', padding: 15}}> */}
+                             {/* <Ripple
+                                 size={10}
+                                 onPress={() => this.state.navigation.navigate('Call')}
+                             >
+                                 <Image style={{width: 30, height: 30}}
+                                     source={require('../../assets/icons/android/drawable-xxxhdpi/disable_video.png')}/>
+                             </Ripple> */}
+                             {/* </View> */}
+
+                             {/* <Ripple
+                                 size={10}
+                                 onPress={() => this.state.navigation.navigate('VideoCall')}
+                             >
+                                 <Image style={{width: 30, height: 30}}
+                                     source={require('../../assets/icons/android/drawable-xxxhdpi/video_mic_mute.png')}/>
+                             </Ripple>
+
+                     </View> */}
+
+
+                     {/* {
+                     (this.state.localStream && this.state.showRemoteVideo) ?
+                         <RTCView style={styles.camVideo} streamURL={this.state.localStream.toURL()} /> : null
+                     } */}
+
+                        //  </RTCView> : null
+                 }
+
+
+
+
+
+                    {/* <VideoCall showRemoteVideo = {this.state.showRemoteVideo} localStream={this.state.localStream} localStream = {this.state.localStream} remoteStream = {this.state.remoteStream.stream} />  */}
+
+
+
+
+
+
+                        chatBtn: {
+        position: "absolute",
+        bottom: '1%',
+        display: 'flex',
+        flexDirection: 'row',
+        width: 
+        alignItems: 'space-around',
+        marginVertical: 10
+    },
+
+
+
+     (this.state.localStream && this.state.showRemoteVideo)  ?
+
+
+
+
+      
+            if (this.state.ticket) {
+
+            return (
+                <View>
+                    <View>
+                        {
+                            this.state.ticket.messages.map((message, index) => {
+
+                                var isSenderPatient = message.senderID === this.state.ticket.patientID;
+
+                                return (
+                                    <View key={index} style={{flexDirection: 'row', justifyContent: 'flex-start'}}>
+                                        <View style={{flexDirection: 'row', flex: 1, marginVertical: 5}}>
+                                            <View style={{flex: isSenderPatient ? 0.03 : 0.5}}/>
+                                            <View style={{
+                                                flex: 0.6,
+                                                borderRadius: 20,
+                                                backgroundColor: isSenderPatient ? '#ff674f' : '#8babf6',
+                                                padding: 10,
+                                                paddingHorizontal: 15,
+                                            }}>
+                                                <View>
+                                                    <Text style={{color: '#fdfeff'}}>
+                                                        {message.file == null ? message.text : message.file.originalName}
+                                                    </Text>
+                                                </View>
+                                                <View style={{alignItems: 'flex-end'}}>
+                                                    <Text style={{
+                                                        fontSize: 10,
+                                                        color: '#fdfeff',
+                                                        fontWeight: '700'
+                                                    }}>
+                                                        {message.createdAt}
+                                                    </Text>
+                                                </View>
+                                            </View>
+                                        </View>
+                                    </View>
+                                );
+
+                            })
+                        }
+                    </View>
+
+
+
+
+                    /// Dummy tickets
+                      messages : [{"createdAt": "2020-02-03T20:36:53.1101397+05:00", "file": null, "id": 82, "sender": null, "senderID": 4, "text": "Vuifryj", "ticket": null, "ticketID": 512, "type": 0}, {"createdAt": "2020-02-03T20:37:08.4184362+05:00", "file": null, "id": 84, "sender": null, "senderID": 1, "text": "hvjbjvbfvjvjgj", "ticket": null, "ticketID": 512, "type": 0}, {"createdAt": "2020-02-03T20:37:12.3497016+05:00", "file": null, "id": 85, "sender": null, "senderID": 1, "text": "bujncj jc irj j kjsjdjjsdfjfjfkjkfkkskkfkjffjkfjfjkfjfkjfkjfkjfzxlxzxxmxmmxmxmmxmxm ", "ticket": null, "ticketID": 512, "type": 0}, {"createdAt": "2020-02-03T20:37:14.265959+05:00", "file": null, "id": 86, "sender": null, "senderID": 1, "text": "cnjscnncjeckc", "ticket": null, "ticketID": 512, "type": 0}, {"createdAt": "2020-02-03T20:37:18.4907367+05:00", "file": null, "id": 87, "sender": null, "senderID": 4, "text": "Hznsjwnqjsnsjwje", "ticket": null, "ticketID": 512, "type": 0}, {"createdAt": "2020-02-03T20:37:22.2151439+05:00", "file": null, "id": 88, "sender": null, "senderID": 4, "text": "Znnsnsidhewhheuejw", "ticket": null, "ticketID": 512, "type": 0}, {"createdAt": "2020-02-03T20:37:24.9339434+05:00", "file": null, "id": 89, "sender": null, "senderID": 4, "text": "Bzjsgshwjjw", "ticket": null, "ticketID": 512, "type": 0}],
+                patientID: 4
+
+
+
+
+
+<View style={{...styles.screen}}>
+                  <View style={{flex:1, alignItems: 'center'}}>
+                    {
+                         (this.state.remoteStream && this.state.showRemoteVideo) ? 
+                         <RTCView streamURL= {this.state.remoteStream.stream.toURL()} style={{width:800, height: 900}} /> 
+                      : null
+                    }
+                </View>
+
+
+
+
+                remote stream {"bubbles": false, "cancelable": false, "currentTarget": {"_dataChannelIds": Set {}, "_localStreams": [[MediaStream]], "_peerConnectionId": 3, "_remoteStreams": [[MediaStream]], "_subscriptions": [[EmitterSubscription], [EmitterSubscription], [EmitterSubscription], [EmitterSubscription], [EmitterSubscription], [EmitterSubscription], [EmitterSubscription], [EmitterSubscription], [EmitterSubscription]], "iceConnectionState": "connected", "iceGatheringState": "complete", "localDescription": [Object], "remoteDescription": [Object], "signalingState": "stable"}, "eventPhase": 2, "isTrusted": false, "target": {"_dataChannelIds": Set {}, "_localStreams": [[MediaStream]], "_peerConnectionId": 3, "_remoteStreams": [[MediaStream]], "_subscriptions": [[EmitterSubscription], [EmitterSubscription], [EmitterSubscription], [EmitterSubscription], [EmitterSubscription], [EmitterSubscription], [EmitterSubscription], [EmitterSubscription], [EmitterSubscription]], "iceConnectionState": "connected", "iceGatheringState": "complete", "localDescription": [Object], "remoteDescription": [Object], "signalingState": "stable"}, "timeStamp": 1580813105115, "type": "addstream"}
+
+
+
+
+                // doctorMessage(messageText, time) {
+    //     return (
+    //         <View style={{flexDirection: 'row', flex: 1, marginVertical: 5}}>
+    //             <View style={{
+    //                 flex: 0.6,
+    //                 backgroundColor: '#f2f6f9',
+    //                 borderRadius: 20,
+    //                 borderBottomLeftRadius: 2,
+    //                 padding: 10,
+    //                 paddingHorizontal: 15,
+    //                 marginLeft: 20,
+    //             }}>
+    //                 <View>
+    //                     <Text style={{color: '#4c556e'}}>messageText</Text>
+    //                 </View>
+    //                 <View style={{alignItems: 'flex-end'}}>
+    //                     <Text style={{fontSize: 10, color: '#4c556e', fontWeight: '700'}}>time</Text>
+    //                 </View>
+    //             </View>
+    //         </View>
+    //     )
+    // }
+
+    // userMessage(messageText, time) {
+    //     return (
+    //         <View style={{flexDirection: 'row', flex: 1, marginVertical: 5}}>
+    //             <View style={{flex: 0.4}}></View>
+    //             <View style={{
+    //                 flex: 0.6,
+    //                 borderRadius: 20,
+    //                 borderTopRightRadius: 1,
+    //                 backgroundColor: '#8babf6',
+    //                 padding: 10,
+    //                 paddingHorizontal: 15,
+    //                 marginRight: 20,
+    //             }}>
+    //                 <View>
+    //                     <Text style={{color: '#fdfeff'}}>messageText</Text>
+    //                 </View>
+    //                 <View style={{alignItems: 'flex-end'}}>
+    //                     <Text style={{fontSize: 10, color: '#fdfeff', fontWeight: '700'}}>time</Text>
+    //                 </View>
+    //             </View>
+    //         </View>
+    //     )
+    // }
