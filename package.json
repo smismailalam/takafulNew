@@ -17,7 +17,7 @@
     "@react-native-community/viewpager": "^3.3.0",
     "@twotalltotems/react-native-otp-input": "^1.2.1",
     "accordion-collapse-react-native": "^0.3.1",
-    "axios": "^0.19.1",
+    "axios": "^0.21.1",
     "d3": "^5.15.1",
     "moment": "^2.27.0",
     "native-base": "^2.13.12",
