@@ -19,7 +19,7 @@
     "accordion-collapse-react-native": "^0.3.1",
     "axios": "^0.19.1",
     "d3": "^5.15.1",
-    "moment": "^2.27.0",
+    "moment": "^2.29.2",
     "native-base": "^2.13.12",
     "node-sass": "^4.13.1",
     "react": "16.9.0",
